@@ -1,0 +1,27 @@
+{
+  "name": "datepicker-plugin-wh",
+  "version": "1.0.4",
+  "description": "datepicker plugin for WealthHealth react project",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc && cp package.json README.md ./dist && cp ./src/DatePicker.css ./dist"
+  },
+  "author": "Yuliya Bert",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "react": "^18.3.1"
+  }
+}
