@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./DatePicker.css";
 
 interface DatePickerProps {
   id: string;
