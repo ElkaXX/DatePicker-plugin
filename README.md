@@ -24,12 +24,14 @@ Step 2: Use the DatePicker Component
 Add the DatePicker component to your form or UI component by specifying its props.
 Here’s an example:
 
+```typescript
 <DatePicker
-id="date-of-birth"
-label="Date of Birth"
-value={formData.dateOfBirth}
-onChange={handleDateChange("dateOfBirth")}
+  id="date-of-birth"
+  label="Date of Birth"
+  value={formData.dateOfBirth}
+  onChange={handleDateChange("dateOfBirth")}
 />
+```
 
 ### Props
 
