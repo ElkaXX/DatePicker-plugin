@@ -1,10 +1,10 @@
 # Datepicker Plugin for WealthHealth React Project
 
-A simple, customizable date picker component for React, designed for the WealthHealth application. This plugin provides an intuitive date selection interface and can be easily integrated into any React project.
+A simple, customizable `date picker` component for React, designed for the WealthHealth application. This plugin provides an intuitive date selection interface and can be easily integrated into any React project.
 
 ## Installation
 
-To install the datepicker-plugin-wh package, use npm:
+To install the `datepicker-plugin-wh` package, use npm:
 
 ```bash
 npm install datepicker-plugin-wh
@@ -14,14 +14,14 @@ npm install datepicker-plugin-wh
 ## Usage
 
 Step 1: Import the Component
-In your React project, import the DatePicker component.
+In your React project, import the `DatePicker` component.
 
 ```typescript
 import { DatePicker } from "datepicker-plugin-wh";
 ```
 
-Step 2: Use the DatePicker Component
-Add the DatePicker component to your form or UI component by specifying its props.
+Step 2: Use the `DatePicker` Component
+Add the `DatePicker` component to your form or UI component by specifying its props.
 Here’s an example:
 
 ```typescript
@@ -54,7 +54,7 @@ The `DatePicker` component includes a default style sheet (`DatePicker.css`) tha
 
 ### Customizing Styles
 
-To customize the appearance of the date picker, override the CSS classes in your project’s CSS files.
+To customize the appearance of the `date picker`, override the CSS classes in your project’s CSS files.
 
 Example:
 
@@ -63,5 +63,21 @@ Example:
 .date-picker {
   max-width: 300px;
   margin-bottom: 1rem;
+}
+```
+
+To copy CSS files to the build directory `dist` after compiling TypeScript, install the `cpx` package:
+
+```bash
+npm npm install cpx --save-dev
+
+```
+
+For your `scripts` configuration in `package.json`, particularly for Windows users, you may need to modify
+the `build` script slightly. The current configuration is:
+
+```typescript
+"scripts": {
+    "build": "tsc && cpx \"src/DatePicker.css\" dist"
 }
 ```
