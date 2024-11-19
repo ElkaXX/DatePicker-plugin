@@ -1,6 +1,6 @@
 {
   "name": "datepicker-plugin-wh",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "datepicker plugin for WealthHealth react project",
   "main": "dist/index.js",
   "files": [
